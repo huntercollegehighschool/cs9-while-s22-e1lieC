@@ -18,3 +18,18 @@ Enter a number or enter 0 to stop: 0
 Number of evens: 3
 
 '''
+
+num_int = None
+even_count = 0
+
+while num_int != 0:
+    num_str = input("Enter a number or enter 0 to stop: ")
+    num_int = int(num_str)
+    if num_int < 0:
+        continue
+    if num_int % 2 == 0:
+        even_count += 1
+
+print("Even count:", even_count)
+
+# i think it counts 0 as an even number
